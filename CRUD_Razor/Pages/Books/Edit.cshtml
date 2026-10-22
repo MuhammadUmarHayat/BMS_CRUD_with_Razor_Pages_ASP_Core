@@ -1,0 +1,42 @@
+﻿@page "{id:int}"
+@model CRUD_Razor.EditModel
+
+
+<h2>Edit Book</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Book.Id" />
+
+    <div class="mb-3">
+        <label asp-for="Book.title">Title</label>
+        <input asp-for="Book.title" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.author">Author</label>
+        <input asp-for="Book.author" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.description">Description</label>
+        <input asp-for="Book.description" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.publisher">Publisher</label>
+        <input asp-for="Book.publisher" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.status">Status</label>
+        <input asp-for="Book.status" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.category">Category</label>
+        <input asp-for="Book.category" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Book</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>

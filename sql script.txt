@@ -1,0 +1,16 @@
+
+ i want to create CRUD operation using Visual Studio Razor pages and MSSQL 
+my table and initial code is given below?
+CREATE TABLE [dbo].books
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [title] NVARCHAR(50) NULL, 
+    [author] NVARCHAR(50) NULL, 
+    [description] NVARCHAR(50) NULL, 
+    [publisher] NVARCHAR(50) NULL, 
+    [status] NVARCHAR(50) NULL, 
+    [category] NVARCHAR(50) NULL
+)
+
+Install-Package Microsoft.Data.SqlClient
+

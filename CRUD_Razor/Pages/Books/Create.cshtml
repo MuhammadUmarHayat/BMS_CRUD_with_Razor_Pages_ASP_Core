@@ -1,0 +1,42 @@
+﻿@page
+@model CRUD_Razor.CreateModel
+@{
+}
+
+
+<h2>Add New Book</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Book.title" class="form-label">Title</label>
+        <input asp-for="Book.title" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.author" class="form-label">Author</label>
+        <input asp-for="Book.author" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.description" class="form-label">Description</label>
+        <input asp-for="Book.description" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.publisher" class="form-label">Publisher</label>
+        <input asp-for="Book.publisher" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.status" class="form-label">Status</label>
+        <input asp-for="Book.status" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Book.category" class="form-label">Category</label>
+        <input asp-for="Book.category" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success">Save Book</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>
