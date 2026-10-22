@@ -1,6 +1,5 @@
 
- i want to create CRUD operation using Visual Studio Razor pages and MSSQL 
-my table and initial code is given below?
+
 CREATE TABLE [dbo].books
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
