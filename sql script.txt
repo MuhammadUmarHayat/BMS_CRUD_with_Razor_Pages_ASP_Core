@@ -10,6 +10,10 @@ CREATE TABLE [dbo].books
     [status] NVARCHAR(50) NULL, 
     [category] NVARCHAR(50) NULL
 )
-
+.................................................
+"ConnectionStrings": {
+    "DefaultConnection": ""
+  }
+..........................................................................
 Install-Package Microsoft.Data.SqlClient
 
